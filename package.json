@@ -1,0 +1,29 @@
+{
+  "name": "node-bing-wallpaper",
+  "version": "1.0.0",
+  "description": "Simple node script that downloads latest bing wallpaper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mihab/node-bing-wallpaper.git"
+  },
+  "keywords": [
+    "bing",
+    "wallpaper"
+  ],
+  "author": "Miha Blazin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mihab/node-bing-wallpaper/issues"
+  },
+  "homepage": "https://github.com/mihab/node-bing-wallpaper#readme",
+  "dependencies": {
+    "request": "^2.72.0"
+  },
+  "engines" : {
+    "node" : ">=4.1.3"
+  }
+}

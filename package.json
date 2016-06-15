@@ -4,7 +4,8 @@
   "description": "Simple node script that downloads latest bing wallpaper",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "chmod +x index.js"
   },
   "repository": {
     "type": "git",

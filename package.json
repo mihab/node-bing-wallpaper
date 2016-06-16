@@ -22,9 +22,10 @@
   },
   "homepage": "https://github.com/mihab/node-bing-wallpaper#readme",
   "dependencies": {
-    "request": "^2.72.0"
+    "request": "^2.72.0",
+    "xml2js": "^0.4.16"
   },
-  "engines" : {
-    "node" : ">=4.1.3"
+  "engines": {
+    "node": ">=4.1.3"
   }
 }

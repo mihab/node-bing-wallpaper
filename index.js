@@ -47,7 +47,10 @@ function retrieveRawString() {
 }
 
 function start() {
-    retrieveRawString().then(rawString => retrieveImageUrl(rawString)).then(url => saveImageToDisk(url));
+    retrieveRawString()
+        .then(rawString => retrieveImageUrl(rawString))
+        .then(url => saveImageToDisk(url))
+        .catch(err => console.log("Could not execute promise chain: " + err));
 }
 
 // Wait for wifi to connect

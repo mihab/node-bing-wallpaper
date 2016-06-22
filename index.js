@@ -5,6 +5,7 @@
 const request = require('request');
 const parseString = require('xml2js').parseString;
 const fs = require('fs');
+const os = require('os');
 
 function saveImageToDisk(url) {
     return new Promise((resolve, reject) => {
@@ -50,12 +51,12 @@ function start() {
     retrieveRawString()
         .then(rawString => retrieveImageUrl(rawString))
         .then(url => saveImageToDisk(url))
-        .catch(err => console.log("Could not execute promise chain: " + err));
+        .catch(err => console.log("Could not execute promise chain: " + err + os.EOL + err.stack));
 }
 
 // Wait for wifi to connect
 setTimeout(start, 30000);
 
 process.on('unhandledRejection', (reason) => {
-    console.log('Failure: ' + reason);
+    console.log('Failure: ' + reason + os.EOL + reason.stack);
 });
